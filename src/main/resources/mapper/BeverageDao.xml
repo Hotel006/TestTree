@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.order.dao.BeverageDao">
+	<!-- 目的：为dao接口方法提供sql语句配置 -->
+	
+	<select id="queryAll" resultType="com.order.entity.Beverage">
+		SELECT
+			beverage.beverageid,
+			beverage.price,
+			beverage.`name`,
+			beverage.details,
+			beverage.photo,
+			beverage.good,
+			beverage.sort
+		FROM
+			beverage
+		
+	</select>
+	
+	<select id="querySort" resultType="com.order.entity.Beverage">
+		SELECT 
+			DISTINCT(sort) 
+		FROM 
+			`beverage`
+		ORDER BY 
+			sort
+		
+	</select>
+	
+	
+	
+
+</mapper>

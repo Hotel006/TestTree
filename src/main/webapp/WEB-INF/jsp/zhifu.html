@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>支付付款页面</title>
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<script src="message.js"></script>
+	<link href="css/zhifu.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/pwdInput.css">
+
+</head>
+
+<body>
+<!--
+
+* 17素材vip建站专区模块代码
+* 详尽信息请看官网：http://www.17sucai.com/pins/vip
+*
+* Copyright , 温州易站网络科技有限公司版权所有
+*
+* 请尊重原创，未经允许请勿转载。
+* 在保留版权的前提下可应用于个人或商业用途
+
+-->
+<section class="aui-flexView">
+	<header class="aui-navBar aui-navBar-fixed b-line">
+		<a href="zhuangtai.html" class="aui-navBar-item">
+			<i class="icon icon-return"></i>返回
+		</a>
+		<div class="aui-center">
+			<span class="aui-center-title">转账</span>
+		</div>
+		
+	</header>
+	<section class="aui-scrollView">
+		<div class="aui-user-box">
+			<div class="aui-user-img">
+				<span><img src="img/zun.png" alt=""></span>
+				<img src="img/user.png" alt="">
+			</div>
+			<div class="aui-user-head">
+				<h2>小猪猪(朱**)</h2>
+				<p>q54***@qq.com</p>
+			</div>
+		</div>
+		<div class="aui-flex">
+			<div class="aui-flex-box">
+				<h2>付款金额</h2>
+				<div class="aui-input-head b-line">
+					<i>￥25</i>
+					<input type="text"  disabled="disabled"aria-placeholder="">
+				</div>
+				<div class="aui-input-text">
+					<input type="text" placeholder="添加备注(50字以内)">
+				</div>
+				<div class="aui-button-get">
+					<button data-ydui-actionsheet="{target:'#actionSheet',closeElement:'#cancel'}">确认付款</button>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+</section>
+</body>
+<div class="m-actionsheet" id="actionSheet">
+	<div class="aui-show-box">
+		<div class="aui-show-box-title aui-footer-flex">
+			<div class="aui-flex b-line">
+				<i class="icon icon-close" id="cancel"></i>
+				<div class="aui-flex-box">
+					<h4>确认付款</h4>
+				</div>
+				<i class="icon icon-doubt"></i>
+			</div>
+			<div class="aui-coll-share-box">
+				<h1><i>￥</i>25.00</h1>
+			</div>
+			<div class="aui-info-line">
+				<a href="javascript:;" class="aui-flex b-line">
+					<div class="aui-flex-box">
+						<h5>订单信息</h5>
+					</div>
+					<div class="aui-text">转账</div>
+				</a>
+				<a href="javascript:;" class="aui-flex b-line">
+					<div class="aui-flex-box">
+						<h5>付款方式</h5>
+					</div>
+					<div class="aui-arrow">账户余额</div>
+				</a>
+			</div>
+
+			<div class="aui-coll-cancel">
+				<a href="javascript:;" id="cancel" class="" onclick="open1()"><button id="alert" style="background-color: transparent;border: none;">立即付款</button></a>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/pwdInput.js"></script>
+<script>
+function open1() {
+	isPwdInput.open(function(data) {
+		console.log(data);
+		document.getElementById()
+	});
+}
+</script>
+<script>
+		
+			document.getElementById('alert').onclick = function () {
+		alert('支付成功')
+		
+	}
+</script>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
+</html>
